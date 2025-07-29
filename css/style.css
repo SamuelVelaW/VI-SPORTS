@@ -1,0 +1,161 @@
+
+@font-face {
+    font-family: 'Oufit'; 
+    src: url('/fonts/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'RockSalt'; 
+    src: url('/fonts/RockSalt-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+    color: #ffffff;
+    background-color: #1a1a1a; 
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: absolute;
+    width: calc(100% - 60px);
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.logo img {
+    height: 100px;  
+    width: auto;   
+    display: block;
+
+    margin-top: -25px;
+    margin-bottom: -100px;
+}
+
+.main-nav ul {
+    display: flex; 
+    align-items: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-nav li:not(:first-child)::before {
+    content: '|';
+    margin: 0 20px; 
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.main-nav a {
+    font-size: 1em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white; 
+}
+
+.user-nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-nav a {
+    font-size: 1.5em; 
+}
+
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    padding: 20px;
+
+   
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+        url('/images/Imagenfondohorizontal.jpg');
+
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-family: 'RockSalt'; 
+    font-size: 2.0em;
+    margin-top: 40px; 
+    margin-bottom: 40px;
+}
+
+
+.categories-grid {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    gap: 70px;             
+    width: 100%;
+}
+
+.category-row {
+    display: flex;
+    justify-content: center; 
+    gap: 120px;               
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.category-item:hover {
+    transform: scale(1.1);
+}
+
+.category-icon {
+    width: 150px;
+    height: 150px;
+    background-color: #3c3c3b (255, 255, 255, 0.25);
+    border: 2px solid #ffffff;
+    border-radius: 50%; 
+
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.category-item span {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+#icon-ropa-mujer { background-image: url('/images/icons/ropa-mujer.png'); }
+#icon-tenis { background-image: url('/images/icons/CategoriaGuayos.png'); }
+#icon-ropa-hombre { background-image: url('/images/icons/CategoríaRopaHombre.png'); }
+#icon-futbol { background-image: url('/images/icons/CategoríaFutbol.png'); }
+#icon-calzado { background-image: url('/images/icons/CategoriaCalzado.png'); }
+#icon-balones { background-image: url('/images/icons/CategoríaBalones.png'); }
+#icon-resistencia { background-image: url('/images/icons/CategoríaResistencia.png'); }
+#icon-natacion { background-image: url('/images/icons/CategoríaNatacion.png'); }
+#icon-basketball { background-image: url('/images/icons/CategoríaBasketball.png'); }
+
